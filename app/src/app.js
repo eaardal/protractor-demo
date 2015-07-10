@@ -1,9 +1,16 @@
-var app = angular.module('foobar', []);
+var app = angular.module('foobar', ['ngRoute']);
 
-app.controller('fooctrl', fooctrl);
-
-fooctrl.$inject = ['$scope'];
-
-function fooctrl($scope){
-	$scope.hello = 'Greetings, world';
-}
+app.config(function($routeProvider){
+	$routeProvider
+		.when('/', {
+			templateUrl: 'first-view.html',
+			controller: 'firstView'
+		})
+		.when('/second', {
+			templateUrl: 'second-view.html',
+			controller: 'secondView'
+		})
+		.otherwise({
+			redirectTo: '/'
+		});
+});
