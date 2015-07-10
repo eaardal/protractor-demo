@@ -1,16 +1,16 @@
 - install nodejs 0.12.7 (www.nodejs.org)
-choco install jre8
+- install java 8: choco install jre8 -y
 
-[ Verifiser er på PATH: java, npm ]
+[ Verify is on PATH: java, npm ]
 
 - npm install -g grunt-cli
 - npm install -g protractor
 - npm install -g bower
 - npm install -g http-server
 
-[ Verifiser er på PATH: webdriver-manager, grunt, bower ]
+[ Verify is on PATH: webdriver-manager, grunt, bower, http-server ]
 
-- webdriver-manager update --proxy="http://www-proxy.statoil.no:80"
+- Ensure Selenium is up to date: "webdriver-manager update --proxy="http://www-proxy.statoil.no:80"
 
 - npm init
 - npm install grunt --save-dev
@@ -29,12 +29,12 @@ choco install jre8
 - bower install angular-mocks --save
 - bower install angular-route
 
-- Lastet ned Selenium IE driver: http://selenium-release.storage.googleapis.com/index.html?path=2.46/ (IEDriverServer_x64.exe)
-- La IEDriverServer_x64.exe under %userprofile%\AppData\Roaming\npm (siden den mappen allerede er på PATH)
+- Downloaded Selenium IE driver: http://selenium-release.storage.googleapis.com/index.html?path=2.46/ (IEDriverServer_x64.exe)
+- Placed IEDriverServer.exe under %userprofile%\AppData\Roaming\npm (since this dir is already on PATH)
 
-- Lastet ned Selenium Chrome driver: http://chromedriver.storage.googleapis.com/index.html?path=2.9/ (chromedriver_win32.zip)
-- La chromedriver.exe under %userprofile%\AppData\Roaming\npm
+- Download Selenium Chrome driver: http://chromedriver.storage.googleapis.com/index.html?path=2.9/ (chromedriver_win32.zip)
+- Placed chromedriver.exe under %userprofile%\AppData\Roaming\npm
 
-- Installerte python 2.7: choco install python2 -y
-- Flyttet mappen for python2 over/før python3 i PATH slik at python 2 blir gjeldende
-- TODO: Finn ut om python er nødvendig
+- Installed Python 2.7: choco install python2 -y
+- Moved the directory for Python2 above Python3 in the PATH so that Python2 will be loaded on command line.
+- TODO: Figure out if Python is necessary/mandatory
