@@ -1,4 +1,4 @@
-describe('fooctrl', function(){
+describe('firstView controller', function(){
 	var $controllerConstructor;
 	var $rootScope;
 	var $q;
@@ -14,7 +14,7 @@ describe('fooctrl', function(){
     }));
 
 	function createSut(){
-		return $controllerConstructor('fooctrl', {
+		return $controllerConstructor('firstView', {
             $scope: $scope
         });
 	}
@@ -23,4 +23,8 @@ describe('fooctrl', function(){
 		expect(createSut()).toBeDefined();
 	});
 
+	it('should set loc to "first view"', function(){
+		var sut = createSut();
+		expect($scope.loc).toBe('first view');
+	});
 });

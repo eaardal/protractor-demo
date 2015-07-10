@@ -36,11 +36,12 @@ module.exports = function (config) {
           files: [
             // Application dependencies
             'app/libs/angular/angular.min.js',
+            'app/libs/angular-route/angular-route.min.js',
             'app/libs/angular-mocks/angular-mocks.js',
             // Application files
-            'app/src/**/*.js',
+            'app/src/*.js',
             // Test files
-            'app/test/**/*.js',
+            'app/test/unit/*.js',
             ],
 
             ngHtml2JsPreprocessor: {

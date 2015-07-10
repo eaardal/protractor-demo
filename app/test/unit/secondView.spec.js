@@ -1,4 +1,4 @@
-describe('fooctrl', function(){
+describe('secondView controller', function(){
 	var $controllerConstructor;
 	var $rootScope;
 	var $q;
@@ -14,7 +14,7 @@ describe('fooctrl', function(){
     }));
 
 	function createSut(){
-		return $controllerConstructor('fooctrl', {
+		return $controllerConstructor('secondView', {
             $scope: $scope
         });
 	}
@@ -23,4 +23,8 @@ describe('fooctrl', function(){
 		expect(createSut()).toBeDefined();
 	});
 
+	it('should set loc to "second view"', function(){
+		var sut = createSut();
+		expect($scope.loc).toBe('second view');
+	});
 });

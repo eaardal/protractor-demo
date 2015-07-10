@@ -31,8 +31,8 @@ module.exports = function (grunt) {
             },
             e2e: {
                     options: {
-                        keepAlive: true,
-                        args: {baseUrl: 'http://localhost:8081/' }
+                        keepAlive: true
+                        //args: { baseUrl: 'http://localhost:8080/' }
                     }
             }
         }
