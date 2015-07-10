@@ -23,7 +23,18 @@ choco install jre8
 - npm install karma-coverage --save-dev
 - npm install karma-phantomjs-launcher --save-dev
 - npm install karma-ie-launcher --save-dev
+- npm install selenium-server-standalone-jar --save-dev
 
 - bower install angular --save
 - bower install angular-mocks --save
+- bower install angular-route
 
+- Lastet ned Selenium IE driver: http://selenium-release.storage.googleapis.com/index.html?path=2.46/ (IEDriverServer_x64.exe)
+- La IEDriverServer_x64.exe under %userprofile%\AppData\Roaming\npm (siden den mappen allerede er på PATH)
+
+- Lastet ned Selenium Chrome driver: http://chromedriver.storage.googleapis.com/index.html?path=2.9/ (chromedriver_win32.zip)
+- La chromedriver.exe under %userprofile%\AppData\Roaming\npm
+
+- Installerte python 2.7: choco install python2 -y
+- Flyttet mappen for python2 over/før python3 i PATH slik at python 2 blir gjeldende
+- TODO: Finn ut om python er nødvendig
