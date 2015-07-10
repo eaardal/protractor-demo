@@ -1,0 +1,6 @@
+{
+	"directory" : "app/libs",
+  	"proxy" : "http://www-proxy.statoil.no:80",
+	"https-proxy" : "http://www-proxy.statoil.no:80",
+  	"strict-ssl" : false
+}
